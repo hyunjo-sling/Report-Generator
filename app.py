@@ -38,8 +38,8 @@ def initialize_session_state():
 
 # --- 메인 앱 로직 (리셋 버튼 구조 변경) ---
 def main():
-    st.title("👨‍🏫 AI 수행평가 조력자 (v14. 최종)")
-    st.markdown("수행평가에 대한 모든 내용을 자유롭게 입력하고, AI의 강력한 지원을 받아보세요!")
+    st.title("👾 AI 수행평가 생성기")
+    st.markdown("Gemini 2.5 Pro 사용 중")
     
     initialize_session_state()
 
@@ -47,7 +47,7 @@ def main():
     # 첫 화면이 아닐 때만 리셋 버튼을 보여줌
     if st.session_state.stage != 'initial_input':
         st.sidebar.title("메뉴")
-        if st.sidebar.button("🔄 새로운 작업 시작하기", use_container_width=True):
+        if st.sidebar.button("🔄 새로운 수행 생성하기", use_container_width=True):
             st.session_state.clear() # 모든 세션 상태를 깨끗하게 지움
             st.rerun() # 앱을 완전히 처음부터 다시 실행
 
