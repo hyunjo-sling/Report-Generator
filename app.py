@@ -5,7 +5,7 @@ from streamlit_cookies_manager import EncryptedCookieManager # <<< 핵심 추가
 from datetime import datetime, timedelta # <<< 핵심 추가
 
 # --- 페이지 기본 설정 및 API 키 설정 ---
-st.set_page_config(page_title="AI 수행평가 조력자", page_icon="👨‍🏫", layout="wide")
+st.set_page_config(page_title="AI 수행평가 생성기", page_icon="👾", layout="wide")
 try:
     genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
     model = genai.GenerativeModel('gemini-2.5-pro')
