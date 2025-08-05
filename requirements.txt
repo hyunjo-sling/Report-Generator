@@ -2,4 +2,3 @@ streamlit
 google-generativeai
 streamlit-cookies-manager
 streamlit-antd-components
-streamlit-copy-to-clipboard
